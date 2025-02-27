@@ -7,9 +7,7 @@ const cors = require("cors")
 const booksRouter = require("./routers/booksRouter")
 
 // CORS che permette la comunicazione con il front-end
-app.use(cors({
-  origin: "http://localhost:3000"
-}))
+app.use(cors())
 // Middlewares
 app.use(express.static('public'))
 // Parsing del req.body
